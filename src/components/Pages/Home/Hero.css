@@ -1,0 +1,128 @@
+/* body.light .text-stroke {
+  color: #5e3bee;
+  -webkit-text-stroke: 1.5px #333;
+  font-weight: bolder;
+} */
+
+body.light .hero {
+  background-color: #f5fcff;
+}
+
+body.light .text-role {
+  color: #5e3bee;
+}
+
+body.dark .text-role {
+  color: #ffc107;
+
+}
+
+body.light .contact-button button {
+  background-color: #5e3bee;
+  color: #fff;
+  border: 1px solid #5e3bee;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+body.light .contact-button button:hover {
+  background-color: #fff;
+  color: #5e3bee;
+  border: 1px solid #5e3bee;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+body.dark .contact-button button {
+  background-color: #ffc107;
+  color: #242424;
+  border: 1px solid #ffc107;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+body.dark .contact-button button:hover {
+  background-color: #242424;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+body.light .rollyImage {
+  background-color: #c9e1eb;
+  height: 300px;
+  width: 400px;
+  border-radius: 20px 50px;
+  animation: pulse 3s infinite;
+}
+
+body.dark .rollyImage {
+  background-color: #2b3a42	;
+  height: 300px;
+  width: 400px;
+  border-radius: 20px 50px;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rollyImage img {
+  height: 350px;
+  width: 400px;
+  object-fit: cover;
+  background-position: center;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+/* style of screen with a size of 1000px */
+@media (max-width: 1000px) {
+  .text-front {
+    font-size: 25px;
+  }
+
+  body.light .contact-button button {
+  padding: 10px 20px;
+  }
+
+  body.light .contact-button button:hover {
+    padding: 10px 20px;
+  
+  }
+
+  body.dark .contact-button button {
+  padding: 10px 20px;
+  }
+
+  body.dark .contact-button button:hover {
+    padding: 10px 20px;
+
+  }
+
+  body.light .rollyImage {
+  height: 250px;
+  width: 340px;
+  }
+
+  body.dark .rollyImage {
+    height: 250px;
+    width: 340px;
+    
+  }
+
+  .rollyImage img {
+    height: 300px;
+    width: 400px;
+  }
+}

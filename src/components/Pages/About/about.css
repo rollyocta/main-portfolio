@@ -1,0 +1,264 @@
+body.light .image-MainContainer {
+    position: relative; /* Needed for positioning the ::before */
+    background-image: url('../../../image/me/rolly-grad.jpg');
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body.light .image-MainContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-image: url('../../../image/me/paint-flash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+
+body.dark .image-MainContainer {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    background-color: #242424;
+    overflow: hidden;
+  }
+  
+ body.dark .image-MainContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+    /* This is your actual photo */
+    background-image: url('../../../image/me/rolly-grad.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    /* This is your white-trace paint flash as mask */
+    mask-image: url('../../../image/me/darkPaintFlash.png');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    mask-mode: luminance;
+  
+    -webkit-mask-image: url('../../../image/me/darkPaintFlash.png');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    -webkit-mask-mode: luminance;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    body.light .image-MainContainer {
+        position: relative; /* Needed for positioning the ::before */
+        background-image: url('../../../image/me/rolly-grad.jpg');
+        height: 370px;
+        width: 370px;
+        object-fit: contain;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: -5;
+    }
+    
+    body.light .image-MainContainer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        background-image: url('../../../image/me/paint-flash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: screen;
+        z-index: 100;
+    }
+
+    body.dark .image-MainContainer {
+        position: relative;
+        height: 370px;
+        width: 370px;
+        object-fit: contain;
+        background-color: #242424;
+        overflow: hidden;
+      }
+      
+     body.dark .image-MainContainer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      
+        /* This is your actual photo */
+        background-image: url('../../../image/me/rolly-grad.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+        /* This is your white-trace paint flash as mask */
+        mask-image: url('../../../image/me/darkPaintFlash.png');
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: cover;
+        mask-mode: luminance;
+      
+        -webkit-mask-image: url('../../../image/me/darkPaintFlash.png');
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: cover;
+        -webkit-mask-mode: luminance;
+      }
+}
+  
+  
+/* timeline style */
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.timeline-item {
+  width: calc(50% + 1px);
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+body.light .timeline-item-right {
+  align-self: flex-end;
+  border-left: 2px solid #5e3bee;
+  background-color: #c9e1eb;
+}
+body.light .timeline-item-left {
+  align-self: flex-start;
+  border-right: 2px solid #5e3bee;
+  background-color: rgba(0,0,0,0.1);
+}
+
+body.light .timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #5e3bee;
+  z-index: 9999;
+  top: 1.35rem;
+}
+
+body.dark .timeline-item-right {
+  align-self: flex-end;
+  border-left: 2px solid #ffc107;
+  background-color: #2b3a42;
+}
+body.dark .timeline-item-left {
+  align-self: flex-start;
+  border-right: 2px solid #ffc107;
+  background-color: rgba(0,0,0,0.4);
+}
+
+body.dark .timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #ffc107;
+  z-index: 9999;
+  top: 1.35rem;
+}
+
+.timeline-item-right::after {
+  left: -11px;
+}
+.timeline-item-left::after {
+  right: -11px;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  /* color: #666; */
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+}
+.timeline-item-left * {
+  text-align: end;
+}
+
+.timeline-content span {
+  font-size: 15px;
+  /* color: #a4a4a4; */
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  text-align: justify;
+  /* color: #888; */
+}
+
+@media screen and (max-width: 1024px) {
+  body.light .timeline-item {
+    width: 100%;
+    padding: 1.35rem 2rem;
+    border-right: none;
+    border-left: 2px solid #5e3bee;
+  }
+
+  body.dark .timeline-item {
+    width: 100%;
+    padding: 1.35rem 2rem;
+    border-right: none;
+    border-left: 2px solid #ffc107;
+  }
+
+  .timeline-item-right {
+    align-self: flex-start;
+  }
+
+  .timeline-item-left * {
+    text-align: start;
+  }
+  .timeline-item-left::after {
+    right: auto;
+    left: -11px;
+  }
+  .timeline-item::after {
+    top: 2rem;
+  }
+}
+
+
+/* end of timeline style */

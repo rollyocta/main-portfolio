@@ -1,0 +1,28 @@
+
+body.light .tool-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c9e1eb;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+body.dark .tool-container {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b3a42;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+.tool-container img {
+    border-radius: 5px;
+}
