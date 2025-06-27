@@ -79,11 +79,11 @@ body.dark .rollyImage {
 
 .rollyImage img {
   height: 350px;
-  width: 400px;
+  width: auto;
   object-fit: cover;
   background-position: center;
   margin-top: -50px;
-  margin-left: -50px;
+  /* margin-left: -50px; */
 }
 
 /* style of screen with a size of 1000px */
@@ -123,6 +123,6 @@ body.dark .rollyImage {
 
   .rollyImage img {
     height: 300px;
-    width: 400px;
+    width: auto;
   }
 }

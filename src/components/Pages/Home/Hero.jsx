@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 import './Hero.css'; // Assuming you have a CSS file for styling
 
-import rollyImage from '../../../image/me/sample_model.png';
+import rollyImage from '../../../image/me/rolly.png';
 
 const Hero = () => {
 
   return (
-    <section className='d-flex justify-content-center align-items-center pt-5 hero' id="Home">
-    <div className='row container mt-5'>
+    <section className='d-flex justify-content-center align-items-center pt-5 mt-5 hero' id="Home">
+    <div className='row container mt-5 pt-5'>
       <div className='col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center mb-5'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,7 @@ const Hero = () => {
           <p>Your vision, my code</p>
 
           <div className='contact-button'>
-            <a href="#">
+            <a href="#Contact">
               <button>Get in touch</button>
             </a>
           </div>

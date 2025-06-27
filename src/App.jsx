@@ -25,8 +25,6 @@ function App() {
 
       <Sidebar isOpen={isOpen} closeMenu={closeMenu} />
 
-      <hr />
-
       <Hero />
       <Skills />
       <About />

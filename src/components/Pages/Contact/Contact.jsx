@@ -5,7 +5,7 @@ import './contact.css'
 
 const Contact = () => {
   return (
-    <main className='mt-5 pb-3 contact'>
+    <main className='mt-5 pb-3 contact' id='Contact'>
         <div className='p-5'>
             <h1 className="fw-bold text-center">Get in Touch</h1>
         </div>

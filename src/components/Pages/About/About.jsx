@@ -18,7 +18,7 @@ const About = () => {
           
         </div>
   
-        <div className="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center pt-5 position-relative">
+        <div className="col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-items-center pt-5 position-relative">
           
           <div className='mb-5'>
             <motion.div
@@ -45,9 +45,9 @@ const About = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.5 }}
               >
-              <p style={{textAlign:"justify"}}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eos asperiores nesciunt ipsam delectus alias unde ea, debitis, laboriosam corrupti dolorum non. Nulla quisquam porro expedita eos dolores, repellendus aliquid.</p>
 
-              <p style={{textAlign:"justify"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut hic quas ad. Tenetur amet optio quos doloremque quasi inventore nostrum obcaecati officiis labore, deleniti atque quia, suscipit vero voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique in non ipsa vero vel aliquam animi, quod optio hic! Esse ab voluptatem ad minima deleniti illum fuga nulla soluta dolorum!</p>
+              <p style={{textAlign:"justify", lineHeight: "2.6"}}>I am Rolly G. Octa, 25 years old, currently residing in Bagtas, Tanza, Cavite.
+              a 4th-year graduate from Cavite State University - CCAT with a Bachelor's degree in Information Technology. I specialize in building top-notch, budget-friendly websites crafted for individuals and businesses. My focus is on delivering impactful, user-friendly, and visually appealing online platforms that perfectly align with your unique needs and preferences.</p>
             </motion.div>
         </div>
 

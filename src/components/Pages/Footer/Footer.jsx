@@ -9,7 +9,7 @@ const Footer = () => {
 
     <div className='social-icons'>
         <div className='d-flex justify-content-between align-items-center p-3'>
-            <a href="#">
+            <a href="https://www.facebook.com/rolly.octa.98/" target="_blank" rel="noopener noreferrer">
                 <div className='footer-iconContainer'>
                     <Facebook />
                 </div>
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         <div className='d-flex justify-content-between align-items-center p-3'>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/rolly-octa-ba29b3304/" target="_blank" rel="noopener noreferrer">
                 <div className='footer-iconContainer'>
                     <Linkedin />
                 </div>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         <div className='d-flex justify-content-between align-items-center p-3'>
-            <a href="#">
+            <a href="https://github.com/rollyocta" target="_blank" rel="noopener noreferrer">
                 <div className='footer-iconContainer'>
                     <Github />
                 </div>
